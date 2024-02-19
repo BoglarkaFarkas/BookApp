@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gfiJ43WPm8Dw0MPNDb8i0oUU3NTc9wTC+2Qh3k87B5A=",
+  "Source": "bookapp",
+  "BasePath": "_content/bookapp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
