@@ -118,6 +118,8 @@ public class BookService
         {
             return false;
         }
+        var relatedLoan = context.Loan.Where(ba => ba.BookId == id);
+        context.Loan.RemoveRange(relatedLoan);
         var relatedBookAuthors = context.BookAuthor.Where(ba => ba.BookId == id);
         context.BookAuthor.RemoveRange(relatedBookAuthors);
         context.Book.Remove(book);
