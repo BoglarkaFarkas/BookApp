@@ -4,11 +4,11 @@ using myappdotnet.Model;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddAuthorization(); 
+builder.Services.AddAuthorization();
 builder.Services.AddControllers();
-builder.Services.AddScoped<AuthorController>(); 
-builder.Services.AddScoped<BookController>(); 
-builder.Services.AddScoped<LoanController>(); 
+builder.Services.AddScoped<AuthorController>();
+builder.Services.AddScoped<BookController>();
+builder.Services.AddScoped<LoanController>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));

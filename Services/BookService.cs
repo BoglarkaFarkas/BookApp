@@ -1,6 +1,4 @@
 namespace myappdotnet.Service;
-
-using Microsoft.EntityFrameworkCore;
 using myappdotnet.DTOs;
 using myappdotnet.Model;
 public class BookService
@@ -126,7 +124,7 @@ public class BookService
         context.SaveChanges();
         return true;
     }
-    
+
     private bool AuthorsAreEqual(ICollection<AuthorDTO> newAuthors, ICollection<Author> existingAuthors)
     {
         if (newAuthors.Count != existingAuthors.Count)

@@ -126,7 +126,9 @@ public class BookController : ControllerBase
             if (deletedBook == false)
             {
                 return NotFound(new ErrorResponseDTO { Status = 404, Error = "Book do not exist" });
-            }else{
+            }
+            else
+            {
                 return Ok(new { message = "Book was deleted" });
             }
         }

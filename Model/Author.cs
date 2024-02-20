@@ -10,9 +10,9 @@ public class Author
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
-    public string Surname { get; set; }
+    public string? Surname { get; set; }
 
-    public string FirstName { get; set; }
+    public string? FirstName { get; set; }
 }
 
 public class AuthorConfiguration : IEntityTypeConfiguration<Author>

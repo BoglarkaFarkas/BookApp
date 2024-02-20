@@ -18,8 +18,6 @@ public class LoanController : ControllerBase
         this.loanService = new LoanService(context);
     }
 
-
-
     [HttpPost]
     [Route("create-loan")]
     public IActionResult LoanCreate([FromBody] LoanDTO loanDTO)

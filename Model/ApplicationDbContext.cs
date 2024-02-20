@@ -27,12 +27,12 @@ namespace myappdotnet.Model
                 .ValueGeneratedOnAdd();
 
             modelBuilder.Entity<BookAuthor>()
-            .Property(a => a.Id)
-            .ValueGeneratedOnAdd();
+                .Property(a => a.Id)
+                .ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Loan>()
-            .Property(l => l.Id)
-            .ValueGeneratedOnAdd();
+                .Property(l => l.Id)
+                .ValueGeneratedOnAdd();
 
             modelBuilder.ApplyConfiguration(new LoanConfiguration());
         }

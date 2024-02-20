@@ -13,7 +13,7 @@ public class Loan
     public int BookId { get; set; }
 
     [Required]
-    public string Email { get; set; }
+    public string? Email { get; set; }
 
     public DateTime DateOfBorowing { get; set; }
 
@@ -21,7 +21,7 @@ public class Loan
     public bool IsFree { get; set; }
 
     [ForeignKey("BookId")]
-    public Book Book { get; set; }
+    public Book? Book { get; set; }
 }
 
 public class LoanConfiguration : IEntityTypeConfiguration<Loan>

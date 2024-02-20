@@ -1,6 +1,4 @@
 namespace myappdotnet.Service;
-
-using Microsoft.EntityFrameworkCore;
 using myappdotnet.Model;
 public class AuthorService
 {
